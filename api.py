@@ -26,7 +26,7 @@ for user in data:
 
 #csv output
 try:
-    with open(csv_file, "w",newline="")
+    with open(csv_file, "w",newline=""):
         writer = csv.DictWriter(csv_file, fieldnames=processed_data[0].keys())
         writer.writeheader()
         writer.writerows(processed_data)
